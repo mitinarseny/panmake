@@ -14,8 +14,9 @@ RUN mkdir -p "${FONTS_PATH}" \
     done \
   && fc-cache -f
 
-RUN tlmgr update --self \
-  && tlmgr install \
+RUN tlmgr update --self --all
+
+RUN tlmgr install \
     lstfiracode \
     mnsymbol \
     footnotebackref \
