@@ -1,4 +1,4 @@
-ARG PANDOC_VERSION=2.7.3
+ARG PANDOC_VERSION=latest
 FROM pandoc/latex:${PANDOC_VERSION}
 
 RUN apk add --no-cache \
